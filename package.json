@@ -1,0 +1,36 @@
+{
+  "name": "sonarr.ts",
+  "version": "1.0.0",
+  "description": "A Sonarr Typescript API generated from Swagger",
+  "main": "dist/Api.js",
+  "types": "dist/Api.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "swagger-typescript-api -p swagger.json -o ./src --clean-output -r && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ian-otto/sonarr.ts.git"
+  },
+  "keywords": [
+    "radarr",
+    "typescript",
+    "swagger"
+  ],
+  "author": "ian-otto (Ian Otto)",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/ian-otto/sonarr.ts/issues"
+  },
+  "homepage": "https://github.com/ian-otto/sonarr.ts#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "swagger-typescript-api": "^13.0.3"
+  }
+}
